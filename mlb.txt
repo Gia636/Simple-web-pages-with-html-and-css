@@ -1,0 +1,40 @@
+<?php
+$Headings = array('Team', 'Wins', 'Losses', 'Games Behind', 'Streak');
+$Yankees = array('Yankees', 84, 78, 9, 'L1');
+$Orioles = array('Orioles', 89, 73, 4, 'W1');
+$RedSox = array('Red Sox', 93, 69, '-', 'L2');
+$BlueJays = array('Blue Jays', 89, 73, 4, 'W2');
+$Rays = array('Rays', 68, 94, 25, 'W2');
+?>
+<html>
+	<table style="width:100%">
+		<caption>AL East Standings</caption>
+		<tr>
+			
+			<?php foreach($Headings as $heading){ 
+			?> <th><?php print_r($heading);}?></th>
+				
+			
+		</tr>
+		<tr>
+			<?php foreach($Yankees as $Y){
+			?> <td><?php print_r($Y);}?></td>
+		</tr>
+		<tr>
+			<?php foreach($Orioles as $O){
+			?> <td><?php print_r($O);}?></td>
+		</tr>
+		<tr>
+			<?php foreach($RedSox as $RS){
+			?> <td><?php print_r($RS);}?></td>
+		</tr>
+		<tr>
+			<?php foreach($BlueJays as $B){
+			?> <td><?php print_r($B);}?></td>
+		</tr>
+		<tr>
+			<?php foreach($Rays as $R){
+			?> <td><?php print_r($R);}?></td>
+		</tr>
+	</table>
+</html>
